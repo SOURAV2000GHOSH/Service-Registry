@@ -1,0 +1,17 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+#logging:
+#  pattern:
+#    level: %5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
