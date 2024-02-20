@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.shopApplication</groupId>
-	<artifactId>Service-Registry</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>serviceregistry</artifactId>
+	<version>0.0.1</version>
 	<name>Service-Registry</name>
 	<description>Spring Boot project for Service-Registry</description>
 	<properties>
@@ -67,6 +67,24 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+<!--			use for jib that is use for build docker image at the time of building-->
+<!--			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<configuration>
+					<from>
+						<image>openjdk:17</image>
+					</from>
+					<to>
+						<image>registry.hub.docker.com/souravghoshdev/${artifactId}</image>
+						<tags>${project.version}</tags>
+						<auth>
+							<username>souravghosh6543@gmail.com</username>
+							<password>Sourav#2000</password>
+						</auth>
+					</to>
+				</configuration>
+			</plugin>-->
 		</plugins>
 	</build>
 
