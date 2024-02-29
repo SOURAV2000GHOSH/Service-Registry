@@ -68,7 +68,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 <!--			use for jib that is use for build docker image at the time of building-->
-<!--			<plugin>
+			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<configuration>
@@ -77,14 +77,13 @@
 					</from>
 					<to>
 						<image>registry.hub.docker.com/souravghoshdev/${artifactId}</image>
-						<tags>${project.version}</tags>
-						<auth>
-							<username>souravghosh6543@gmail.com</username>
-							<password>Sourav#2000</password>
-						</auth>
+						<tags>
+                			<tag>latest</tag>
+                			<tag>${project.version}</tag>
+            			</tags>
 					</to>
 				</configuration>
-			</plugin>-->
+			</plugin>
 		</plugins>
 	</build>
 
